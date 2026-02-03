@@ -6,7 +6,7 @@ $upload_dir = 'uploads/';
 if (!is_dir($upload_dir)) {
     mkdir($upload_dir, 0755, true);
 }
-
+    
 $message = '';
 $image_path = '';
 
@@ -170,7 +170,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['image'])) {
             cursor: pointer;
             font-size: 16px;
             font-weight: 600;
-            width: 100%;
+            width: auto;
+            display: inline-block;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         
@@ -181,6 +182,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['image'])) {
         
         .upload-btn:active {
             transform: translateY(0);
+        }
+        
+        .form-group .upload-btn[type="submit"] {
+            width: 100%;
+            display: block;
         }
         
         .message {
