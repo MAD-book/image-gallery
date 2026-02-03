@@ -121,6 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['image'])) {
         
         .form-group {
             margin-bottom: 25px;
+            text-align: center;
         }
         
         label {
