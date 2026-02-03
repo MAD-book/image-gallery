@@ -184,11 +184,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['image'])) {
             transform: translateY(0);
         }
         
-        .form-group .upload-btn[type="submit"] {
-            width: 100%;
-            display: block;
-        }
-        
         .message {
             padding: 15px;
             border-radius: 8px;
